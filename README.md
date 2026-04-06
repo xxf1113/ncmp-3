@@ -1,3 +1,4 @@
+#keep alive
 # ncmp
 
 ncmp(NetEase Cloud Music Partner/网易云音乐合伙人)
