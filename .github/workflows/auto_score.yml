@@ -15,12 +15,14 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
-        python-version: '3.13'
+        python-version: '3.12'
     
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python -m pip config list
+        python -m pip install -i https://pypi.org/simple --no-cache-dir -r requirements.txt
+        
     
     - name: Run script
       env:
